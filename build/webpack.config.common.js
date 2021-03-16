@@ -22,8 +22,12 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
+        test: /\.styl$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'stylus-loader']
+      },
+      {
         test: /\.s?css$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
     ],
   },
